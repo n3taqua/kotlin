@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#321919"
+    tools:context=".view.filmDetailActivity">
+
+
+    <ImageView
+        android:id="@+id/img_film_back"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/img_film_avatar"
+        android:layout_width="110dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="344dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_film_title_detail"
+        app:layout_constraintEnd_toEndOf="@+id/img_film_back"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_film_back"
+        app:layout_constraintVertical_bias="1.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txt_film_title_detail"
+        android:layout_width="176dp"
+        android:layout_height="38dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TextView"
+        android:textColor="#BD8F8F"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/img_film_back"
+        app:layout_constraintHorizontal_bias="0.663"
+        app:layout_constraintStart_toEndOf="@+id/img_film_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/img_film_back" />
+
+    <RatingBar
+        android:id="@+id/rat_film_detail"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/txt_film_detail_overview"
+        app:layout_constraintEnd_toEndOf="@+id/txt_film_title_detail"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="@+id/txt_film_title_detail"
+        app:layout_constraintTop_toBottomOf="@+id/txt_film_title_detail"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/txt_film_detail_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="TextView"
+        android:textColor="#917777"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="@+id/img_film_avatar"
+        app:layout_constraintTop_toBottomOf="@+id/txt_film_title_detail"
+        app:layout_constraintVertical_bias="0.542" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="serif-monospace"
+        android:text="StoryLine"
+        android:textColor="#E8CECE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_film_detail_overview"
+        app:layout_constraintStart_toStartOf="@+id/img_film_avatar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
